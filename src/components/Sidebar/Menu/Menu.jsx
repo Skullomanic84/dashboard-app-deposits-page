@@ -6,11 +6,11 @@ function Menu() {
     
     return (
         <Container>
-            <MenuItem title="Home" icon=""/>
-            <MenuItem title="Deposits" icon="" active/>
-            <MenuItem title="Offers" icon="" />
-            <MenuItem title="Payments" icon="" />
-            <MenuItem title="Settings" icon="" />
+            <MenuItem title="Home" icon="home"/>
+            <MenuItem title="Deposits" icon="file-multiple" active/>
+            <MenuItem title="Offers" icon="gift" />
+            <MenuItem title="Payments" icon="bank" />
+            <MenuItem title="Settings" icon="cog" />
         </Container>
     )
 }

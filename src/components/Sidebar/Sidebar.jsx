@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import Menu from './Menu/Menu'
 import Profile from './Profile'
+import ToggleSwitch from './ToggleSwitch'
 
 
 function Sidebar() {
@@ -11,6 +12,8 @@ function Sidebar() {
             <Profile />
 
             <Menu />
+
+            <ToggleSwitch />
 
 
         </Container>

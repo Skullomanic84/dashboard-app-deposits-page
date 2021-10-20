@@ -4,6 +4,7 @@ import styled from 'styled-components'
 function MenuItem({ title, icon, active }) {
     return (
         <Container active={active}>
+            <Icon active= {active} className="iconify" data-icon={`mdi-light:${icon}`} data-icon-inline="false"> </Icon>
             <Title active= {active}>{title}</Title>
         </Container>
     )
@@ -28,7 +29,11 @@ const Container = styled.div `
     }
 `
 
-const Icon = styled.span ``
+const Icon = styled.span `
+    color: ${props => props.active ? props.theme.activeMenu :  "#aaa5a5"}; ;
+    font-size: 1.3rem;
+    margin-right: 1rem;
+`
 
 const Title = styled.h1 `
     color: ${props => props.active ? props.theme.activeMenu :  "#aaa5a5"}; ;
